@@ -13,7 +13,7 @@ import Layout from '../components/layouts/article'
 // import thumb50xFaster from '../public/images/contents/youtube-50x-faster.jpg'
 
 const Posts = () => (
-  <Layout title="Posts">
+  <Layout title="Resume">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
         Resume

@@ -1,5 +1,5 @@
 {
-  "name": "craftzdog-homepage",
+  "name": "javixlive-homepage",
   "version": "1.0.0",
   "description": "Takuya's website",
   "scripts": {
@@ -10,8 +10,6 @@
     "lint": "next lint"
   },
   "keywords": [],
-  "author": "Takuya Matsuyama",
-  "license": "MIT",
   "dependencies": {
     "@chakra-ui/icons": "^2.0.15",
     "@chakra-ui/react": "^2.4.6",

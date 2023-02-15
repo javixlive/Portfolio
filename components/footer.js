@@ -4,9 +4,9 @@ const Footer = () => {
   return (
     <Box align="center" opacity={0.8} fontSize="sm">
       &copy; {new Date().getFullYear()} Javier Montaño. 
-      Theme inspired by: 
+      Theme inspired by:&nbsp;
       <Link color={"orange"} href={'https://www.craftz.dog/'}>
-         Takuya Matsuyama&apos;s website. 
+         Takuya Matsuyama&apos;s website.&nbsp;
       </Link>
       All Rights Reserved.
     </Box>
