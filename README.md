@@ -1,6 +1,6 @@
 # Javixlive's Homepage
 
-<!-- [https://www.craftz.dog/](https://www.craftz.dog/) -->
+[https://javixlive.netlify.app/](https://javixlive.netlify.app/)
 
 ## Stack
 
