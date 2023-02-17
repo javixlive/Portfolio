@@ -33,7 +33,7 @@ const Logo = () => {
           fontWeight="bold"
           ml={3}
         >
-          Javier Montaño
+          &nbsp;Javier Montaño
         </Text>
       </LogoBox>
 
