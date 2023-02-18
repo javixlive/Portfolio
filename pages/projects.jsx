@@ -6,8 +6,9 @@ import { WorkGridItem } from '../components/grid-item'
 import thumbNovaTech from '../public/images/novatech/LandingPage.png'
 import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
 import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
-import thumbPichu2 from '../public/images/works/pichu2_eyecatch.png'
-import thumbFreeDBTagger from '../public/images/works/freedbtagger_eyecatch.png'
+
+import thumbScara from '../public/images/works/scara.png'
+import thumbIWP from '../public/images/works/IWP4.png'
 
 const Works = () => (
   <Layout title="Projects">
@@ -26,7 +27,7 @@ const Works = () => (
             E-Commerce for buying/selling PC parts.
           </WorkGridItem>
         </Section>
-        <Section>
+        {/* <Section>
           <WorkGridItem
             id="walknote"
             title="Freelance Workers"
@@ -44,7 +45,7 @@ const Works = () => (
           >
             Interactive Pokedex with pokemons from 1st to 2nd gen.
           </WorkGridItem>
-        </Section>
+        </Section> */}
       </SimpleGrid>
 
       <Section delay={0.4}>
@@ -57,14 +58,14 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.5}>
-          <WorkGridItem id="pichu2" thumbnail={thumbPichu2} title="SCARA Robot">
+          <WorkGridItem id="scara" thumbnail={thumbScara} title="SCARA Robot">
             Design and 3D Simulation of a Selective Compliance Articulated Robot Arm
           </WorkGridItem>
         </Section>
         <Section delay={0.5}>
           <WorkGridItem
-            id="freedbtagger"
-            thumbnail={thumbFreeDBTagger}
+            id="intertiaWheel"
+            thumbnail={thumbIWP}
             title="Inertia Wheel Pendulum"
           >
             Control Design for a IWP which controls a bar that will be maintained at a certain angle
