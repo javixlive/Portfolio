@@ -75,9 +75,10 @@ const Home = () => (
           About me
         </Heading>
         <Paragraph>
-          I&apos;m a recently graduated mechatronics engineer with a passion for 
+          I&apos;m a Engineer with a Bachelor&apos;s degree in Mechatronics & 
+          FullStack Developer experienced in Javascript, 
+          NodeJS, React, C++ with a passion for 
           building new technologies that interest me. 
-          I&apos;ve also been working to become a full stack developer. 
           I have a knack for learning new tech, to plan and design a way 
           to solve real-life problems. When not working I love reading books.{' '}
         </Paragraph>
