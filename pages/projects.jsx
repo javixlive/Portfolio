@@ -4,8 +4,8 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
 import thumbNovaTech from '../public/images/novatech/LandingPage.png'
-import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
-import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
+// import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
+// import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
 
 import thumbScara from '../public/images/works/scara.png'
 import thumbIWP from '../public/images/works/IWP4.png'

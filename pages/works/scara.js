@@ -25,6 +25,20 @@ const Work = () => (
         <ListItem>
           <Meta>Software</Meta>
           <span>Mathlab/Simulink, SolidWorks</span>
+          <br/>
+          <br/>
+          <span>- Calculated direct and inverse kinematics.</span>
+          <br/>
+          <span>- Trajectory generation.</span>
+          <br/>
+          <span>- Dynamic model.</span>
+          <br/>
+          <span>- Mechanical model.</span>
+          <br/>
+          <span>- Analog controller.</span>
+          <br/>
+          <span>- Virtual reality simulation.</span>
+          <br/>
         </ListItem>
       </List>
 
