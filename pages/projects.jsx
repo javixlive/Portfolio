@@ -1,4 +1,4 @@
-import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid, Divider, useColorModeValue } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
@@ -49,8 +49,7 @@ const Works = () => (
       </SimpleGrid>
 
       <Section delay={0.4}>
-        <Divider my={6} />
-
+      <Divider my={6} borderColor={useColorModeValue('white.300', 'purple.200')} />
         <Heading as="h3" fontSize={20} mb={4}>
           Old works
         </Heading>
@@ -72,6 +71,7 @@ const Works = () => (
           </WorkGridItem>
         </Section>
       </SimpleGrid>
+      <Divider my={6} borderColor={useColorModeValue('white.300', 'purple.200')} />
     </Container>
   </Layout>
 )

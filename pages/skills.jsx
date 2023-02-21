@@ -112,7 +112,7 @@ const Skills = () => (
             </SimpleGrid>
           </Section>
         </Section> */}
-        <Divider my={6} borderColor={useColorModeValue('white.300', 'pink.200')} />
+        <Divider my={6} borderColor={useColorModeValue('white.300', 'purple.200')} />
   
       </Container>
     </Layout>

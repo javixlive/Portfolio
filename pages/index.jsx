@@ -8,7 +8,8 @@ import {
   List,
   ListItem,
   useColorModeValue,
-  chakra
+  chakra,
+  Divider,
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -88,7 +89,7 @@ const Home = () => (
             href="/projects"
             scroll={false}
             rightIcon={<ChevronRightIcon />}
-            colorScheme="teal"
+            colorScheme={useColorModeValue('purple', 'orange')}
           >
             My portfolio
           </Button>
@@ -133,7 +134,7 @@ const Home = () => (
             <Link href="https://www.linkedin.com/in/javiermrod/" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme={useColorModeValue('purple', 'orange')}
                 leftIcon={<IoLogoLinkedin />}
               >
                 @javiermrod
@@ -144,7 +145,7 @@ const Home = () => (
             <Link href="https://github.com/javixlive" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme={useColorModeValue('purple', 'orange')}
                 leftIcon={<IoLogoGithub />}
               >
                 @javixlive
@@ -155,7 +156,7 @@ const Home = () => (
             <Link href="https://twitter.com/Kitterbuggy" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme={useColorModeValue('purple', 'orange')}
                 leftIcon={<IoLogoTwitter />}
               >
                 @Kitterbuggy
@@ -164,6 +165,7 @@ const Home = () => (
           </ListItem>
         </List>
       </Section>
+      <Divider my={6} borderColor={useColorModeValue('white.300', 'purple.200')} />
     </Container>
   </Layout>
 )
