@@ -58,7 +58,7 @@ export const SimpleGridItem = ({ title, thumbnail }) => (
 			loading="lazy"
 		/>
 		<Box>
-			<Badge rounded="lg" px="2" p={1} variantColor="teal">
+			<Badge rounded="lg" px="2" p={1} variantcolor="teal">
 				{title}
 			</Badge>
 		</Box>

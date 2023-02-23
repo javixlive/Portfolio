@@ -11,10 +11,10 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { SimpleGridItem } from '../components/grid-item'
 
-import cpp_svg from '../public/images/svg/cplusplus.svg'
 import python_svg from '../public/images/svg/python.svg'
 import js_svg from '../public/images/svg/js.svg'
 import typescript from '../public/images/svg/typescript.svg'
+import cpp_svg from '../public/images/svg/cplusplus.svg'
 
 import react from '../public/images/svg/react.svg' 
 import redux from '../public/images/svg/redux.svg'
@@ -63,7 +63,7 @@ const Skills = () => (
         <Heading variant="section-title" mb={5}>
           Technologies
         </Heading>
-  
+          <Section delay={0.3}>
           <Section delay={0.2}>
             <SimpleGrid columns={[2, 3, 5]} gap={6}>
               <SimpleGridItem
@@ -89,31 +89,8 @@ const Skills = () => (
               />
             </SimpleGrid>
           </Section>
-  
-        {/* <Heading variant="section-title" mb={5}>
-          Tools
-        </Heading>
-        <Section delay={0.3}>
-        <Section delay={0.2}>
-            <SimpleGrid columns={[2, 3, 5]} gap={6}>
-              <SimpleGridItem
-                title="Blender"
-                thumbnail={blender_png}
-                
-              />
-              <SimpleGridItem
-                title="Subst. Painter"
-                thumbnail={substance_png}
-              />
-              <SimpleGridItem
-                title="Visual Studio"
-                thumbnail={vs_svg}
-              />
-            </SimpleGrid>
-          </Section>
-        </Section> */}
-        <Divider my={6} borderColor={useColorModeValue('white.300', 'purple.200')} />
-  
+        </Section>
+        <Divider my={6} borderColor={useColorModeValue('purple.300', 'orange.200')} />
       </Container>
     </Layout>
 )

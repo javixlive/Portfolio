@@ -12,7 +12,7 @@ const VoxelDog = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
-  const urlDogGLB = "./stylized_mangrove_greenhouse.glb"
+  const urlDogGLB = "./lizard_mage.glb"
   //const urlDogGLB = "./space_milk.glb"
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer
@@ -43,16 +43,14 @@ const VoxelDog = () => {
       refRenderer.current = renderer
       const scene = new THREE.Scene()
 
-      const target = new THREE.Vector3(-0.5, 1.2, 0)
+      const target = new THREE.Vector3(-0.5, -2, 0 )
       const initialCameraPosition = new THREE.Vector3(
         20 * Math.sin(0.2 * Math.PI),
         10,
         20 * Math.cos(0.2 * Math.PI)
       )
 
-      // 640 -> 240
-      // 8   -> 6
-      const scale = scH * 0.005 + 15
+      const scale = scH * 0.005 + 2.4
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,

@@ -165,7 +165,7 @@ const Home = () => (
           </ListItem>
         </List>
       </Section>
-      <Divider my={6} borderColor={useColorModeValue('white.300', 'purple.200')} />
+      <Divider my={6} borderColor={useColorModeValue('purple.300', 'orange.200')} />
     </Container>
   </Layout>
 )
