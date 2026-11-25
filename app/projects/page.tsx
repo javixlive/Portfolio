@@ -14,7 +14,7 @@ export default function Projects() {
     <Container>
       {categories.map((category, groupIndex) => (
         <Section key={category} delay={groupIndex * 0.3}>
-          {groupIndex > 0 && <Separator my={6} />}
+          {groupIndex > 0 && <Separator my={6} borderColor="divider" />}
           <Heading as="h3" fontSize="20px" mb={4}>
             {projectCategories[category]}
           </Heading>
