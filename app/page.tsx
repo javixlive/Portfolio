@@ -25,7 +25,13 @@ import Paragraph from '../components/paragraph'
 import Section from '../components/section'
 import SectionTitle from '../components/section-title'
 import type { SocialLink } from '../content/site'
-import { experience, profile, socials, timeline } from '../content/site'
+import {
+  experience,
+  profile,
+  skillGroups,
+  socials,
+  timeline
+} from '../content/site'
 
 const socialIcons: Record<SocialLink['network'], IconType> = {
   linkedin: IoLogoLinkedin,
@@ -34,9 +40,37 @@ const socialIcons: Record<SocialLink['network'], IconType> = {
   email: IoMail
 }
 
+const [addressLocality, addressRegion, addressCountry] =
+  profile.location.split(', ')
+
+const personJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: profile.name,
+  jobTitle: profile.jobTitle,
+  url: profile.siteUrl,
+  email: profile.email,
+  sameAs: socials
+    .filter(social => social.network !== 'email')
+    .map(social => social.href),
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality,
+    addressRegion,
+    addressCountry
+  },
+  knowsAbout: skillGroups.flatMap(group => group.skills)
+}
+
 export default function Home() {
   return (
     <Container>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(personJsonLd).replace(/</g, '\\u003c')
+        }}
+      />
       <Box
         borderRadius="lg"
         mb={6}
